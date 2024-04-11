@@ -80,6 +80,17 @@ class LinkList:
                 break
             itr = itr.next
             count += 1
+    # function that print the AVG of all link list
+    def average(self):
+    avg = 0
+    count = 0
+    itr = self.head
+    while itr:
+        avg += int(itr.data)
+        itr = itr.next
+        count += 1
+
+    return  avg // count
 
     # function that print the all linked list
     def print(self):
